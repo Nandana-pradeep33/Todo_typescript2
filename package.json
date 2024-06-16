@@ -1,10 +1,9 @@
 {
+  "homepage": "https://Nandana-pradeep33.github.io/TodoApp-Typescript",
   "name": "todo-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Nandana-pradeep33.github.io/TodoApp",
-
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
