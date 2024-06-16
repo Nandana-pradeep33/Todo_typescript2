@@ -7,4 +7,5 @@ export default defineConfig({
     outDir: 'build', // Ensure this points to the correct directory
   },
   plugins: [react()],
+  base: "/TodoApp/"
 })
