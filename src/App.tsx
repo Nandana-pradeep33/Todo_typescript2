@@ -66,7 +66,7 @@ const handleDelete=(id:string) =>{
         <p className=' text-white text-3xl text-center p-5 pt-12 mt-15 font-bold'>Todo List</p>
         <div className="mb-16">
           <form  onSubmit={handleSubmit}>
-            <input className="w-[550px] mt-7 border-black rounded-lg p-3 mb-5 ml-10" 
+            <input className="md:w-[550px] w-[240px] mt-7 border-black rounded-lg p-3 mb-5 ml-10" 
              type="text" placeholder=' Enter Todo .. ' value={inputVal} onChange={(event)=> setInputVal(event.target.value)} ref={inputRef}>
 
              </input>
@@ -76,7 +76,7 @@ const handleDelete=(id:string) =>{
         </div>
         <div>
           {items.map(data=>(
-            <div  key={data.id} className="border border-white mx-auto rounded w-[540px]  p-2 mb-7 text-white "><div className="flex justify-between items-center">
+            <div  key={data.id} className="border border-white mx-auto rounded lg:w-[540px] w-[280px]  md:p-2 p-1  mb-7 text-white "><div className="flex justify-between items-center">
             <p className="mr-2 p-2" style={{fontSize:'19px'}}>{data.title}</p>
             <button onClick={()=>handleDelete(data.id)}><img src={img} alt="icon" className="w-6 h-6" /></button>
           </div></div>
