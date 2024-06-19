@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { login } from '../api/userApi';
 
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 const Login: React.FC = () => {
   const [username, setUsername] = useState<string>('');
   const [password, setPassword] = useState<string>('');

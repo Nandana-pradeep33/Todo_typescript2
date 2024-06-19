@@ -11,7 +11,7 @@ import {logoutUser} from '../api/userApi'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Link, useNavigate} from "react-router-dom";
+import {  useNavigate} from "react-router-dom";
 type Items ={
   title:string;
   id: number;
@@ -33,7 +33,7 @@ function Todo() {
 
 const [items, setItems]= useState<Items[]>([]);
 const [inputVal,setInputVal]= useState<string>('');
-const [isLoaded, setIsLoaded] = useState(false); // Track if items have been loaded
+// Track if items have been loaded
 const navigate= useNavigate();
 
 useEffect(() => {
@@ -46,7 +46,7 @@ useEffect(() => {
       try {
         const todos = await fetchTodos(token);
         setItems(todos);
-        setIsLoaded(true);
+       
       } catch (error) {
         console.error('Error fetching todos:', error);
       }

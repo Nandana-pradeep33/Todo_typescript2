@@ -1,7 +1,7 @@
 // src/pages/Signup.tsx
 import React, { useState } from 'react';
 import { signup } from '../api/userApi'
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 
 

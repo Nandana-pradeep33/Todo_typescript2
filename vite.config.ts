@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-   base: "/TodoApp-Typescript/",
+   base: "/Todo_typescript2/",
   plugins: [react()],
  
 })

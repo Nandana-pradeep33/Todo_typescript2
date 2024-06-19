@@ -1,7 +1,7 @@
 
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Signup from './Components/Signup';
 import Login from './Components/Login';
@@ -12,7 +12,7 @@ const App: React.FC = () => {
 
   return (
    
-      <Router basename="/TodoApp-Typescript">
+      <Router basename="/Todo_typescript2">
       <Routes>
         <Route path="/"  element={<Login/>} />
         <Route path='/Signup' element={<Signup/>}/>
